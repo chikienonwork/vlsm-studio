@@ -7,3 +7,9 @@ Before making substantial visual changes, use the Product Design plugin's `get-c
 When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
+
+## Confirmed design decisions
+
+- Use the selected Address Allocation Map direction: light technical workspace, blue/violet primary accent, left navigation and an address-allocation map.
+- Avoid a generic AI-dashboard look; favor restrained spacing, plain Vietnamese labels and data-led interaction.
+- The application must support the full VLSM calculation workflow, while the testing teammate owns documented test execution and result evidence.
