@@ -13,6 +13,7 @@
 - Detail-table tab: passed in browser. All seven rows show expected CIDR, subnet mask, host range and broadcast.
 - Insufficient-space state: passed in browser with `200.120.5.0/30`; app reports it cannot allocate `/26` for LAN B.
 - No new browser console warnings/errors after the GSAP target guard was added.
+- Production verification: passed at `https://chikienonwork.github.io/vlsm-studio/`. The deployed page loaded its assets and the sample calculation produced the expected `/26, /26, /27, /27, /30, /30, /30` allocation with 52 remaining addresses.
 
 ## Fidelity review
 
@@ -44,4 +45,3 @@ Passed. Vietnamese labels are aligned with the course task. The product-specific
 ## Final result
 
 passed
-
